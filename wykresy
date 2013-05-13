@@ -1,0 +1,118 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using ZedGraph;
+
+namespace DynamicData
+{
+  public partial class Form1  Form
+	{
+		int tickStart = 0;
+
+		public Form1()
+		{
+			InitializeComponent();
+		}
+
+		private void Form1_Load( object sender, EventArgs e )
+		{
+			GraphPane myPane = zedGraphControl1.GraphPane;
+			myPane.Title.Text = Przyspieszenie względem osi współrzędnych;
+			myPane.XAxis.Title.Text = Czas;
+			myPane.YAxis.Title.Text = Przyspieszenie;
+
+			RollingPointPairList list = new RollingPointPairList( 1200 );
+
+			LineItem wykres1 = myPane.AddCurve( os X, list, Color.Blue, SymbolType.None );
+            LineItem wykres2 = myPane.AddCurve(os Y, list, Color.Red, SymbolType.None);
+            LineItem wykres3 = myPane.AddCurve(os Z, list, Color.Green, SymbolType.None);
+
+			
+			timer1.Interval = 50;
+			timer1.Enabled = true;
+			timer1.Start();
+
+			myPane.XAxis.Scale.Min = 0;
+			myPane.XAxis.Scale.Max = 30;
+			myPane.XAxis.Scale.MinorStep = 1;
+			myPane.XAxis.Scale.MajorStep = 5;
+
+			zedGraphControl1.AxisChange();
+
+			tickStart = Environment.TickCount;
+		}
+
+		private void timer1_Tick( object sender, EventArgs e )
+		{
+			if ( zedGraphControl1.GraphPane.CurveList.Count = 0 )
+				return;
+
+			 Get the first CurveItem in the graph
+			LineItem wykres1 = zedGraphControl1.GraphPane.CurveList[0] as LineItem;
+			if ( wykres1 == null )
+				return;
+            LineItem wykres2 = zedGraphControl1.GraphPane.CurveList[1] as LineItem;
+            if (wykres2 == null)
+                return;
+
+            LineItem wykres3 = zedGraphControl1.GraphPane.CurveList[2] as LineItem;
+            if (wykres2 == null)
+                return;
+
+
+			
+			IPointListEdit list = wykres1.Points as IPointListEdit;
+            IPointListEdit list2 = wykres2.Points as IPointListEdit;
+            IPointListEdit list3 = wykres2.Points as IPointListEdit;
+
+			 Czas w sekundach
+			double time = ( Environment.TickCount - tickStart )  1000.0;
+
+			list.Add( time, Math.Sin( 2.0  Math.PI  time  3.0 ));
+            list2.Add(time, Math.Cos(2.0  Math.PI  time));
+            list3.Add(time, Math.Tan(2.0  Math.PI  time  2.0));
+
+
+
+			Scale xScale = zedGraphControl1.GraphPane.XAxis.Scale;
+			if ( time  xScale.Max - xScale.MajorStep )
+			{
+				xScale.Max = time + xScale.MajorStep;
+				xScale.Min = xScale.Max - 30.0;
+			}
+
+			
+			zedGraphControl1.AxisChange();
+			
+			zedGraphControl1.Invalidate();
+		}
+
+		private void Form1_Resize( object sender, EventArgs e )
+		{
+			SetSize();
+		}
+
+		 Set the size and location of the ZedGraphControl
+		private void SetSize()
+		{
+			 Control is always 10 pixels inset from the client rectangle of the form
+			Rectangle formRect = this.ClientRectangle;
+			formRect.Inflate( -10, -10 );
+
+			if ( zedGraphControl1.Size != formRect.Size )
+			{
+				zedGraphControl1.Location = formRect.Location;
+				zedGraphControl1.Size = formRect.Size;
+			}
+		}
+
+        private void zedGraphControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+	}
+}
