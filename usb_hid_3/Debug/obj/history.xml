@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wall -ffunction-sections -O0 -g -c -D__FPU_USED -DUSE_STDPERIPH_DRIVER -DSTM32F407VG -I. -ILibraries\STM32F4xx_StdPeriph_Driver\inc -Isrc -ILibraries\STM32_USB_Device_Library\Core -ILibraries\CMSIS\Include -ILibraries\STM32_USB_OTG_Driver\inc -ILibraries\STM32_USB_Device_Library\Core\inc -ILibraries\STM32_USB_Device_Library\Class\hid_custom\inc -ILibraries\Device\STM32F4xx\Include">
+      <target file="stm32f4xx_cryp_aes.o" lastModified="13b7c30ce30">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_aes.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_fsmc.o" lastModified="13b7c30d89f">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fsmc.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="usbd_usr.o" lastModified="13b7c30ce8f">
+         <source file="..\..\src\usbd_usr.c" lastModified="1351cf41a30"/>
+      </target>
+      <target file="stm32f4_discovery.o" lastModified="13b7c30d274">
+         <source file="..\..\src\stm32f4_discovery.c" lastModified="1351cc29a50"/>
+      </target>
+      <target file="misc.o" lastModified="13b7c30dec9">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_cryp.o" lastModified="13b7c30d815">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="usbd_ioreq.o" lastModified="13b7c30e0a4">
+         <source file="..\..\Libraries\STM32_USB_Device_Library\Core\src\usbd_ioreq.c" lastModified="13349de8640"/>
+      </target>
+      <target file="stm32f4xx_cryp_des.o" lastModified="13b7c30d79c">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_des.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="usbd_req.o" lastModified="13b7c30dbb5">
+         <source file="..\..\Libraries\STM32_USB_Device_Library\Core\src\usbd_req.c" lastModified="13349de8640"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="13b7c30e21c">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_exti.o" lastModified="13b7c30de69">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_iwdg.o" lastModified="13b7c30d3a5">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="usbd_desc.o" lastModified="13b7c30d733">
+         <source file="..\..\src\usbd_desc.c" lastModified="13b799c159d"/>
+      </target>
+      <target file="stm32f4xx_gpio.o" lastModified="13b7c30d913">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="usb_bsp.o" lastModified="13b7c30db10">
+         <source file="..\..\src\usb_bsp.c" lastModified="13517551390"/>
+      </target>
+      <target file="usbd_core.o" lastModified="13b7c30d42a">
+         <source file="..\..\Libraries\STM32_USB_Device_Library\Core\src\usbd_core.c" lastModified="13349de8640"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="13b7c30cf86">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_rtc.o" lastModified="13b7c30e031">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_hash_sha1.o" lastModified="13b7c30cef8">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_sha1.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="13b7c30d54d">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_dac.o" lastModified="13b7c30d1d9">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dac.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_can.o" lastModified="13b7c30d098">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_can.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_pwr.o" lastModified="13b7c30cfec">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_wwdg.o" lastModified="13b7c30d0f9">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="usbd_hid_core.o" lastModified="13b7c30d34a">
+         <source file="..\..\Libraries\STM32_USB_Device_Library\Class\hid_custom\src\usbd_hid_core.c" lastModified="13b797d124e"/>
+      </target>
+      <target file="stm32f4xx_rng.o" lastModified="13b7c30de04">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_adc.o" lastModified="13b7c30d659">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_flash.o" lastModified="13b7c30d99f">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_cryp_tdes.o" lastModified="13b7c30e112">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="usb_dcd.o" lastModified="13b7c30df59">
+         <source file="..\..\Libraries\STM32_USB_OTG_Driver\src\usb_dcd.c" lastModified="13349de8e10"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="13b7c30d20d">
+         <source file="..\..\src\startup_stm32f4xx.c" lastModified="13b3128ed40"/>
+      </target>
+      <target file="stm32f4xx_dcmi.o" lastModified="13b7c30d6c9">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dcmi.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_dma.o" lastModified="13b7c30da91">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_crc.o" lastModified="13b7c30d2d2">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_crc.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_sdio.o" lastModified="13b7c30cd1e">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_it.o" lastModified="13b7c30d5bd">
+         <source file="..\..\src\stm32f4xx_it.c" lastModified="13b7993814f"/>
+      </target>
+      <target file="stm32f4xx_hash_md5.o" lastModified="13b7c30d165">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_md5.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_dbgmcu.o" lastModified="13b7c30e27a">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dbgmcu.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="usb_core.o" lastModified="13b7c30cc9f">
+         <source file="..\..\Libraries\STM32_USB_OTG_Driver\src\usb_core.c" lastModified="13349de8e10"/>
+      </target>
+      <target file="stm32f4xx_i2c.o" lastModified="13b7c30dda2">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="13b7c30cba9">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_hash.o" lastModified="13b7c30cd9a">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="13b7c30dd05">
+         <source file="..\..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="main.o" lastModified="13b7c30d4b7">
+         <source file="..\..\src\main.c" lastModified="13b79adc3f7"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="13b7c30da0a">
+         <source file="..\..\src\system_stm32f4xx.c" lastModified="135000f5fb0"/>
+      </target>
+      <target file="usb_dcd_int.o" lastModified="13b7c30dc6a">
+         <source file="..\..\Libraries\STM32_USB_OTG_Driver\src\usb_dcd_int.c" lastModified="13349de8e10"/>
+      </target>
+   </processor>
+</history>
